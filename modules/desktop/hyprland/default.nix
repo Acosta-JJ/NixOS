@@ -4,8 +4,6 @@
   pkgs,
   terminal,
   terminalFileManager,
-  kbdLayout,
-  kbdVariant,
   ...
 }: {
   imports = [
@@ -129,8 +127,10 @@
             #"systemctl start --user polkit-kde-authentication-agent-1"
           ];
           input = {
-            kb_layout = "${kbdLayout},gb,ru";
-            kb_variant = "${kbdVariant},dvorak,";
+            #kb_layout = "gb,gb,ru";
+            #kb_variant = "extd,dvorak,";
+            kb_layout = "us,es";
+            kb_variant = "dvorak,";
             repeat_delay = 300; # or 212
             repeat_rate = 30;
 
@@ -238,7 +238,7 @@
           windowrulev2 = [
             #"noanim, class:^(Rofi)$
             "tile,title:(.*)(Godot)(.*)$"
-            "workspace 1, class:^(kitty)$"
+            #"workspace 1, class:^(kitty)$"
             "workspace 1, class:^(Alacritty)$"
             "workspace 2, class:^(VSCodium)$"
             "workspace 2, class:^(codium-url-handler)$"
@@ -417,7 +417,7 @@
               "$mainMod CTRL, mouse:275, movetoworkspacesilent, 6"
 
               # Rebuild NixOS with a KeyBind
-              "$mainMod CTRL ALT, KP_Divide, exec, $term --class \"rebuildScript\" -e $hyprScriptsDir/rebuild.sh"
+              "$mainMod SHIFT, R, exec, $term --class \"rebuildScript\" -e $hyprScriptsDir/rebuild.sh"
 
               # Scroll through existing workspaces with mainMod + scroll
               "$mainMod, mouse_down, workspace, e+1"

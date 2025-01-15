@@ -8,8 +8,6 @@
   locale,
   timezone,
   kbdLayout,
-  kbdVariant,
-  consoleKeymap,
   self,
   ...
 }: let
@@ -92,6 +90,10 @@ in {
         ripgrep
         tldr
         unzip
+
+        #Personal Ppkg
+        discord
+
         (pkgs.writeShellScriptBin "hello" ''
           echo "Hello ${username}!"
         '')
@@ -104,7 +106,6 @@ in {
   services.devmon.enable = true;
   services.gvfs.enable = true;
   services.udisks2.enable = true;
-
   # Bootloader.
   boot = {
     tmp.cleanOnBoot = true;
@@ -149,14 +150,13 @@ in {
     LC_TELEPHONE = locale;
     LC_TIME = locale;
   };
-  console.keyMap = consoleKeymap; # Configure console keymap
-  services.xserver = {
-    exportConfiguration = true; # Make sure /etc/X11/xkb is populated so localectl works correctly
-    xkb = {
-      layout = kbdLayout;
-      variant = kbdVariant;
-    };
+# Configure keymap in X11
+  services.xserver.xkb = {
+    layout = "us";
+    variant = "dvorak";
   };
+  # Configure console keymap
+  console.keyMap = "dvorak";
 
   security = {
     polkit.enable = true;
@@ -296,7 +296,6 @@ in {
   };
 
   # List services that you want to enable:
-
   # Enable the OpenSSH daemon.
   /*
      services.openssh = {

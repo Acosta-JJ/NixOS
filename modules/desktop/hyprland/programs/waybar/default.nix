@@ -458,7 +458,7 @@
 
           #workspaces button {
               box-shadow: none;
-          	text-shadow: none;
+            text-shadow: none;
               padding: 0px;
               border-radius: 9px;
               padding-left: 4px;
@@ -468,23 +468,23 @@
           }
 
           #workspaces button:hover {
-          	border-radius: 10px;
-          	color: @overlay0;
-          	background-color: @surface0;
-           	padding-left: 2px;
+            border-radius: 10px;
+            color: @overlay0;
+            background-color: @surface0;
+            padding-left: 2px;
               padding-right: 2px;
               animation: gradient_f 20s ease-in infinite;
               transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
           }
 
           #workspaces button.persistent {
-          	color: @surface1;
-          	border-radius: 10px;
+            color: @surface1;
+            border-radius: 10px;
           }
 
           #workspaces button.active {
-          	color: @peach;
-            	border-radius: 10px;
+            color: @peach;
+              border-radius: 10px;
               padding-left: 8px;
               padding-right: 8px;
               animation: gradient_f 20s ease-in infinite;
@@ -492,8 +492,8 @@
           }
 
           #workspaces button.urgent {
-          	color: @red;
-           	border-radius: 0px;
+            color: @red;
+            border-radius: 0px;
           }
 
           #taskbar button.active {
@@ -511,15 +511,15 @@
           }
 
           #custom-cava_mviz {
-          	color: @pink;
+            color: @pink;
           }
 
           #cava {
-          	color: @pink;
+            color: @pink;
           }
 
           #mpris {
-          	color: @pink;
+            color: @pink;
           }
 
           #custom-menu {

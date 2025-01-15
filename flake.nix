@@ -25,20 +25,17 @@
     ...
   } @ inputs: let
     # User configuration
-    username = "kepler"; # no need to touch this since install.sh uses sed to replace this (otherwise if manually installing then you need to change this yourself)
+    username = "acosta"; # no need to touch this since install.sh uses sed to replace this (otherwise if manually installing then you need to change this yourself)
     terminal = "kitty"; # kitty or alacritty
     terminalFileManager = "yazi"; # yazi or lf
-    wallpaper = "cyberpunk.png"; # see modules/themes/wallpapers
+    wallpaper = "dark-forest.jpg"; # see modules/themes/wallpapers
 
     # System configuration
     gpuDriver = "nvidia"; # CHOOSE YOUR GPU DRIVERS (nvidia or amdgpu) THIS IS IMPORTANT
     hostname = "NixOS"; # CHOOSE A HOSTNAME HERE
-    locale = "en_GB.UTF-8"; # CHOOSE YOUR LOCALE
-    timezone = "Europe/London"; # CHOOSE YOUR TIMEZONE
-    kbdLayout = "gb"; # CHOOSE YOUR KEYBOARD LAYOUT (command: localectl list-x11-keymap-layouts)
-    kbdVariant = "extd"; # CHOOSE YOUR KEYBOARD LAYOUT VARIANT (Can leave empty or localectl list-x11-keymap-variants)
-    consoleKeymap = "uk"; # CHOOSE YOUR CONSOLE KEYMAP (Affects the tty?)
-
+    locale = "en_US.UTF-8"; # CHOOSE YOUR LOCALE
+    timezone = "Atlantic/Canary"; # CHOOSE YOUR TIMEZONE
+    kbdLayout = "us(dvorak)"; # CHOOSE YOUR KEYBOARD LAYOUT
     system = "x86_64-linux"; # most users will be on 64 bit pcs
 
     # When defining variables above, make sure to add them here.
@@ -55,8 +52,6 @@
         timezone
         hostname
         kbdLayout
-        kbdVariant
-        consoleKeymap
         ;
     };
 
