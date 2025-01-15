@@ -35,7 +35,7 @@
 > <p>You should review the configuration variables in flake.nix before installing.</p>
 <!-- ## Using the install script -->
 ```bash
-nix run --experimental-features "nix-command flakes" nixpkgs#git clone https://github.com/Sly-Harvey/NixOS.git ~/NixOS
+nix run --experimental-features "nix-command flakes" nixpkgs#git clone https://github.com/Acosta-JJ/NixOS.git ~/NixOS
 ```
 ```bash
 cd ~/NixOS
@@ -54,3 +54,4 @@ sudo nixos-rebuild switch --flake .#Default
 ### Credits/Inspiration
 https://github.com/JaKooLit/Hyprland-Dots<br>
 https://github.com/prasanthrangan/hyprdots
+https://github.com/Sly-Harvey/NixOS
