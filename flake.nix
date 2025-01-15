@@ -28,7 +28,7 @@
     username = "acosta"; # no need to touch this since install.sh uses sed to replace this (otherwise if manually installing then you need to change this yourself)
     terminal = "kitty"; # kitty or alacritty
     terminalFileManager = "yazi"; # yazi or lf
-    wallpaper = "dark-forest.jpg"; # see modules/themes/wallpapers
+    wallpaper = "stars.jpg"; # see modules/themes/wallpapers
 
     # System configuration
     gpuDriver = "nvidia"; # CHOOSE YOUR GPU DRIVERS (nvidia or amdgpu) THIS IS IMPORTANT
