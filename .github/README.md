@@ -35,7 +35,8 @@
 > <p>You should review the configuration variables in flake.nix before installing.</p>
 <!-- ## Using the install script -->
 ```bash
-nix run --experimental-features "nix-command flakes" nixpkgs#git clone https://github.com/Acosta-JJ/NixOS.git ~/NixOS
+nix run --experimental-features "nix-command flakes"
+nixpkgs#git clone https://github.com/Acosta-JJ/NixOS.git ~/NixOS
 ```
 ```bash
 cd ~/NixOS
