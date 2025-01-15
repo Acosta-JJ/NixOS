@@ -342,7 +342,7 @@
               "$mainMod, W, togglefloating" # toggle the window on focus to float
               "$mainMod SHIFT, G, togglegroup" # toggle the window on focus to float
               "ALT, return, fullscreen" # toggle the window on focus to fullscreen
-              "$mainMod ALT, L, exec, hyprlock" # lock screen
+              "$mainMod, L, exec, hyprlock" # lock screen
               "$mainMod, backspace, exec, wlogout -b 4" # logout menu
               "$CONTROL, ESCAPE, exec, killall waybar || waybar" # toggle waybar
 
@@ -359,7 +359,7 @@
               #"$mainMod, tab, exec, pkill -x rofi || $hyprScriptsDir/rofilaunch.sh w" # switch between desktop applications
               # "$mainMod, R, exec, pkill -x rofi || $hyprScriptsDir/rofilaunch.sh f" # browse system files
               "$mainMod ALT, K, exec, $hyprScriptsDir/keyboardswitch.sh" # change keyboard layout
-              "$mainMod SHIFT, N, exec, swaync-client -t -sw" # swayNC panel
+              "$mainMod, N, exec, swaync-client -t -sw" # swayNC panel
               "$mainMod SHIFT, Q, exec, swaync-client -t -sw" # swayNC panel
               "$mainMod, G, exec, $hyprScriptsDir/gamelauncher.sh" # game launcher
               "$mainMod ALT, G, exec, $hyprScriptsDir/gamemode.sh" # disable hypr effects for gamemode
