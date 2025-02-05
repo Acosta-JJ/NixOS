@@ -56,6 +56,17 @@ in {
               # };
 
               "3rdparty".Extensions = {
+                "bitwarden@bitwarden.com" = {
+                  enabled = true;
+                  automation = {
+                    enabled = true;
+                    behavior = "OnOff";  # Or set to 'always' if you want it always enabled
+                    mode = "system";     # Or set to 'user' if you want it per user
+                  };
+                  enableForProtectedPages = true;
+                  autofill = true;     # Enable autofill if you'd like it to fill passwords automatically
+                  allowInPrivateMode = true;  # Allow it in private/incognito mode
+                };
                 "addon@darkreader.org" = {
                   enabled = true;
                   automation = {
@@ -401,6 +412,7 @@ in {
                 betterttv
                 sponsorblock
                 return-youtube-dislikes
+                bitwarden
               ];
               settings = {};
               bookmarks = [

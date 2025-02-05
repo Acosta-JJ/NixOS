@@ -32,10 +32,13 @@
 
 # Installation
 > [!Note]
-> <p>You should review the configuration variables in flake.nix before installing.</p>
+> <p>You should review the configuration variables in flake.nix before installing. Also take a look at the branches, the difference between them resides in nvidia drivers</p>
 <!-- ## Using the install script -->
+Remember to add this nix.settings.experimental-features = ["flakes nix-command"]; to enable nix-command and flakes in /etc/nixos/configuration.nix and then
+```bash 
+sudo nixos-rebuild switch
+```
 ```bash
-nix run --experimental-features "nix-command flakes"
 nixpkgs#git clone https://github.com/Acosta-JJ/NixOS.git ~/NixOS
 ```
 ```bash
