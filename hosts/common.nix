@@ -153,10 +153,10 @@ in {
 # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
-    variant = "dvorak";
+    # variant = "dvorak";
   };
   # Configure console keymap
-  console.keyMap = "dvorak";
+  # console.keyMap = "dvorak";
 
   security = {
     polkit.enable = true;
