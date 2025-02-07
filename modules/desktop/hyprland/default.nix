@@ -129,8 +129,12 @@
           input = {
             #kb_layout = "gb,gb,ru";
             #kb_variant = "extd,dvorak,";
-            kb_layout = "us,es";
-            kb_variant = "dvorak,";
+            #kb_layout = "us,es"; without glove80 configured
+            #kb_variant = "dvorak,";
+            # glove80 configured
+            kb_layout = "us";
+            kb_variant = "";
+
             repeat_delay = 300; # or 212
             repeat_rate = 30;
 

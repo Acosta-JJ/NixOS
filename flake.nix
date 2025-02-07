@@ -35,8 +35,10 @@
     hostname = "NixOS"; # CHOOSE A HOSTNAME HERE
     locale = "en_US.UTF-8"; # CHOOSE YOUR LOCALE
     timezone = "Atlantic/Canary"; # CHOOSE YOUR TIMEZONE
-    kbdLayout = "us(dvorak)"; # CHOOSE YOUR KEYBOARD LAYOUT
+      # kbdLayout = "us(dvorak)"; # CHOOSE YOUR KEYBOARD LAYOUT (layout without Glove80)
     system = "x86_64-linux"; # most users will be on 64 bit pcs
+    kbdLayout = "us"; # Glove80 layout
+
 
     # When defining variables above, make sure to add them here.
     specialArgs = {
