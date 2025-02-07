@@ -33,7 +33,9 @@
   ];
 
   networking.hostName = hostname; # Define your hostname.
-
+  hardware.bluetooth.enable = true; # enables support for Bluetooth
+  hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+  services.blueman.enable = true;
   # Stream my Language lessons to my devices via vlc media player
   services.minidlna = {
     enable = true;
