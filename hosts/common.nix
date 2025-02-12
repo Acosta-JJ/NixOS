@@ -93,7 +93,11 @@ in {
 
         #Personal Ppkg
         discord
-
+        code-cursor
+        awscli2
+        kubectl
+        k9s
+        terraform
         (pkgs.writeShellScriptBin "hello" ''
           echo "Hello ${username}!"
         '')
