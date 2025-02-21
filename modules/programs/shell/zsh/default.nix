@@ -211,6 +211,7 @@
           G = "| grep";
         };
         shellAliases = {
+          k = "kubectl";
           cls = "clear";
           tml = "tmux list-sessions";
           attach = "tmux attach";
