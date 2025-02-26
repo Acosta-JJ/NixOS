@@ -98,6 +98,10 @@ in {
         kubectl
         k9s
         terraform
+        exercism
+        docker
+        fluxcd
+
         (pkgs.writeShellScriptBin "hello" ''
           echo "Hello ${username}!"
         '')
