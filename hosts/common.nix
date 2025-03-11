@@ -99,9 +99,11 @@ in {
         k9s
         terraform
         exercism
-        docker
         fluxcd
-
+        docker
+        google-chrome
+        kubectx
+        
         (pkgs.writeShellScriptBin "hello" ''
           echo "Hello ${username}!"
         '')
@@ -111,6 +113,7 @@ in {
 
   # Filesystems support
   boot.supportedFilesystems = ["ntfs" "exfat" "ext4" "fat32" "btrfs"];
+  services.docker.enable = true;
   services.devmon.enable = true;
   services.gvfs.enable = true;
   services.udisks2.enable = true;
