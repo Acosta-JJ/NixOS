@@ -113,7 +113,7 @@ in {
 
   # Filesystems support
   boot.supportedFilesystems = ["ntfs" "exfat" "ext4" "fat32" "btrfs"];
-  services.docker.enable = true;
+  virtualisation.docker.enable = true;
   services.devmon.enable = true;
   services.gvfs.enable = true;
   services.udisks2.enable = true;
