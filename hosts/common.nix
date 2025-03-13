@@ -103,7 +103,8 @@ in {
         docker
         google-chrome
         kubectx
-        
+        cloudflared
+
         (pkgs.writeShellScriptBin "hello" ''
           echo "Hello ${username}!"
         '')
@@ -114,6 +115,7 @@ in {
   # Filesystems support
   boot.supportedFilesystems = ["ntfs" "exfat" "ext4" "fat32" "btrfs"];
   virtualisation.docker.enable = true;
+  services.cloudflared.enable = true;
   services.devmon.enable = true;
   services.gvfs.enable = true;
   services.udisks2.enable = true;
