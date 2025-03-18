@@ -21,7 +21,7 @@ in {
     ../modules/programs/shell/bash
     ../modules/programs/shell/zsh
     ../modules/programs/browser/firefox
-    ../modules/programs/editor/nixvim
+    ../modules/programs/editor/neovim
     #../modules/programs/editor/vscode
     ../modules/programs/cli/starship
     ../modules/programs/cli/tmux
@@ -106,6 +106,7 @@ in {
         cloudflared
         sops
         age
+        gcc
 
         (pkgs.writeShellScriptBin "hello" ''
           echo "Hello ${username}!"
